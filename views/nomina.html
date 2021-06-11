@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../assets/css/styleform.css">
+    <title>Document</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/1.3.2/jspdf.min.js"></script>
+    <!-- IMPRIMIR PDF -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/1.3.2/jspdf.min.js"></script>
+    <script src="https://raw.githack.com/eKoopmans/html2pdf/master/dist/html2pdf.bundle.js"></script>
+</head>
+
+<body>
+    <section class="SeccionDiv" id="SeccionDiv">
+        <section class="Tabla" id="Tabladiv">
+            <table border="all" id="Tabla">
+                <thead>
+                    <tr id="header">
+
+                        <th>Documento</th>
+                        <th>Colaborador</th>
+                        <th>Sueldo</th>
+                        <th>Dias <br>trabajados</th>
+                        <th>SUELDO<br>BASICO</th>
+                        <th>AUX<br>TRANSPORTE</th>
+                        <th>HORA<br>ORDINARIA</th>
+                        <th>HED</th>
+                        <th>HEN</th>
+                        <th>HEDD</th>
+                        <th>HeDN</th>
+                        <th>Rec <br> Noc</th>
+                        <th>TOTAL <br>EXTRAS </th>
+                        <th>TOTAL<br>DEVENGADO</th>
+                        <th>SALUD</th>
+                        <th>PENSION</th>
+                        <th>FONDO <br> SOL</th>
+                        <th>UVT</th>
+                        <th>RETEFUENTE</th>
+                        <th>RETE-PESOS</th>
+                        <th>TOTAL<br>DEDUCIDO</th>
+                        <th>SALUD <br> PAT</th>
+                        <th>PENSION <br> PAT</th>
+                        <th>Nivel <br> Riesgo</th>
+                        <th>ARL</th>
+                        <th>SENA</th>
+                        <th>ICBF</th>
+                        <th>CAJAS</th>
+                        <th>TOTAL <br>PARA</th>
+                        <th>CESANTIAS</th>
+                        <th>INT/CES</th>
+                        <th>PRIMA</th>
+                        <th>VACACIONES</th>
+                        <th>TOTAL <br>PRESTA</th>
+                        <th>TOTAL <br>NOMINA</th>
+                        <th colspan="2" id="acciones">ACCIONES</th>
+
+
+
+                    </tr>
+                </thead>
+                <tbody>
+
+                </tbody>
+                <tr id="header">
+
+                    <th colspan="2">Totales</th>
+                    <th>Sueldo</th>
+                    <th>Dias <br>trabajados</th>
+                    <th>SUELDO<br>BASICO</th>
+                    <th>AUX<br>TRANSPORTE</th>
+                    <th>HORA<br>ORDINARIA</th>
+                    <th>HED</th>
+                    <th>HEN</th>
+                    <th>HEDD</th>
+                    <th>HeDN</th>
+                    <th>Rec <br> Noc</th>
+                    <th>TOTAL <br>EXTRAS </th>
+                    <th>TOTAL<br>DEVENGADO</th>
+                    <th>SALUD</th>
+                    <th>PENSION</th>
+                    <th>FONDO <br> SOL</th>
+                    <th>UVT</th>
+                    <th>RETEFUENTE</th>
+                    <th>RETE-PESOS</th>
+                    <th>TOTAL<br>DEDUCIDO</th>
+                    <th>SALUD <br> PAT</th>
+                    <th>PENSION <br> PAT</th>
+                    <th>Nivel <br> Riesgo</th>
+                    <th>ARL</th>
+                    <th>SENA</th>
+                    <th>ICBF</th>
+                    <th>CAJAS</th>
+                    <th>TOTAL <br>PARA</th>
+                    <th>CESANTIAS</th>
+                    <th>INT/CES</th>
+                    <th>PRIMA</th>
+                    <th>VACACIONES</th>
+                    <th>TOTAL <br>PRESTA</th>
+                    <th>TOTAL <br>NOMINA</th>
+
+
+
+                </tr>
+            </table>
+        </section>
+
+        <button id="Boton1">Imprimir Nomina</button>
+        <button id="Boton2">Generar <br>PDF</button>
+        <button type="button" onclick="tableToExcel('Tabla', 'Nomina')" value="Export to Excel" id="Boton5">Generar <br>
+            Excel </button>
+        <button id="Boton3" onclick="ConsultaId()">Consultar<br>Por ID</button>
+        <a href="formu.html" id="Boton4">Nuevo <br>Empleado</a>
+
+    </section class="estohubiesesidoundi">
+
+
+    <div class="formActualizar" id="formActualizar">
+        <span class="cerrar" id="cerrar">X</span>
+
+        <div class="formDatos" id="formularioConten">
+
+            <Form class="" method="get" name="formDatos" id="formDatos">
+
+                <p type="Nombre:"><input type="text" name="Name" id="Name" placeholder="Ingrese Nombre"></p>
+
+                <p type="Documento:">
+                    <input type="number" name="Document" id="Document" placeholder="Ingrese Documento">
+                </p>
+
+
+                <p type="Sueldo:">
+                    <input type="number" name="salary" id="salary" placeholder="Ingrese sueldo actual">
+                </p>
+
+
+                <p type="Dias Trabajados:">
+                    <input type="number" name="Days" id="Days" placeholder="Ingrese dias trabajados">
+                </p>
+                <p type="Horas Extras Diurnas:">
+                    <input type="text" name="HED" id="HED" placeholder="Ingrese Horas Extras Diurnas">
+                </p>
+                <p type="Horas Extras Nocturnas:">
+                    <input type="text" name="HEN" id="HEN" placeholder="Ingrese Horas Extras Nocturnas">
+                </p>
+                <p type="Horas Extras Dominicales:">
+                    <input type="text" name="HEDD" id="HEDD" placeholder="Ingrese Horas Extras Dominicales">
+                </p>
+                <p type="Horas Extras Dominicales Nocturnas:">
+                    <input type="text" name="HeDN" id="HeDN" placeholder="Ingrese Horas Extras Dominicales Nocturnas">
+                </p>
+                <p type="Horas Recargo Nocturno:">
+                    <input type="text" name="Rec" id="Rec" placeholder="Ingrese Horas Recargo Nocturno">
+                </p>
+                <p type="Nivel De Riesgo:">
+                    <select name="Riesgo" id="Riesgo">
+                        <option value="" selected>Seleccione Nivel De Riesgo</option>
+                        <option value="1">Nivel 1</option>
+                        <option value="2">Nivel 2</option>
+                        <option value="3">Nivel 3</option>
+                        <option value="4">Nivel 4</option>
+                        <option value="5">Nivel 5</option>
+                    </select>
+                </p>
+
+                <input type="hidden" name="id" id="id">
+                <button type="button" onclick="ObtenerDatos()">Actualizar Empleado</button>
+
+            </Form>
+        </div>
+
+    </div>
+
+    <div class="formActualizar" id="formActualizar2">
+        <span class="cerrar" id="cerrar2">X</span>
+        <div class="formDatosId" id="formularioConten">
+
+            <Form class="" method="get" name="formDatosID" id="formDatosID">
+
+                <p type="Consulta Por Documento:">
+                    <input type="number" name="Id" id="Id" placeholder="Ingrese Documento">
+                </p>
+                <button type="button" onclick="IdConsulta()">Consultar Empleado</button>
+            </Form>
+        </div>
+    </div>
+
+    <footer class="footer2">NOMINA 2021&copy;</footer>
+
+    <script src="../assets/js/nomina/generarTabla.js"></script>
+    <script src="../assets/js/nomina/regEmp.js"></script>
+    <script src="../assets/js/nomina/crudnom.js"></script>
+    <script src="../assets/js/nomina/operaciones.js"></script>
+    <script src="../assets/js/nomina/Botones.js"></script>
+    <script src="../assets/js/nomina/totales.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,287 @@
+
+
+.formDatos{
+    width:500px;
+    height:950px;
+    background:#e6e6e6;
+    border-radius:8px;
+    box-shadow:0 0 40px -10px #000;
+    margin:calc(50vh - 320px) 30px 75px 30%;
+    padding:20px 30px;
+    max-width:calc(100vw - 40px);
+    box-sizing:border-box;
+    font-family:'Montserrat',sans-serif;
+    position:relative;
+    color: #000;
+}
+
+h2{
+    margin:25px  43.1%;
+    padding-bottom:10px;
+    width:180px;
+    color:#78788c;
+    text-align: center;
+    border-bottom:3px solid #78788c
+}
+
+input,select{
+    width:100%;
+    padding:10px;
+    box-sizing:border-box;
+    background:none;
+    outline:none;
+    resize:none;
+    border:0;font-family:'Montserrat',sans-serif;transition:all .3s;
+    border-bottom:2px solid #bebed2;
+}
+
+input:focus,select:focus{
+    border-bottom:2px solid #78788c;
+}
+
+input[type="radio"]{
+    margin: 0;
+    padding: 0;
+    width: 50px;
+    columns: 2;
+}
+
+#DocumentCC{
+    margin: -1px;
+}
+
+#DocumentTI{
+    margin-left: 7px;
+}
+p:before{
+    content:attr(type);
+    margin:40px 0 0;
+    font-size:14px;
+    color:#5a5a5a
+}
+
+button{
+    float:right;
+    padding:8px 12px;
+    margin:8px 0 0;
+    font-family:'Montserrat',sans-serif;
+    border:2px solid #78788c;
+    background:0;
+    color:#5a5a6e;
+    cursor:pointer;
+    transition:all .3s
+}
+
+button:hover{
+    background:#78788c;color:#fff
+}
+
+div{
+    content:'Hi';
+    position:absolute;
+    bottom:-15px;
+    right:-20px;
+    background:#50505a;color:#fff;
+    width:320px;
+    padding:5px 2px 5px 0;
+    border-radius:6px;
+    font-size:13px;
+    box-shadow:10px 10px 40px -14px #000
+}
+
+p{
+    margin: 30px;
+}
+
+/*  Estilos para la tabla con los resultados */
+
+table{
+    border-collapse: collapse;
+    width: 900px;
+    border: 1px solid #bdc3c7;
+    box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.2), -1px 8px rgba(0, 0, 0, 0.2);
+}
+
+tr{
+    transition: all .2s ease-in;
+    cursor: default;
+}
+
+th, td{
+    padding: 13px;
+    text-align: center;
+    font-size: 13px;
+    border-bottom: 1px solid #ddd;
+}
+
+#header{
+    background-color: #16a085;
+    color: #fff;
+}
+
+
+tr:hover{
+    background-color: #f5f5f5;
+    color: #6e6e6e;
+    transform: scale(1.005);
+    box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.2), -1px 8px rgba(0, 0, 0, 0.2);
+}
+
+footer{
+    margin: 50px 0 0 0;
+    text-align: center;
+    background-color: #16a085;
+    padding: 20px;
+}
+.footer2{
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    background-color: #16a085;
+    padding: 20px;
+    
+}
+
+.SeccionDiv{
+    position: relative;
+}
+
+#Boton4{
+    display: block;
+    font-family:'Montserrat',sans-serif;
+    text-align: center;
+    padding: 6px 3px;
+    text-decoration: none;
+    border:2px solid #78788c;
+    background:0;
+    color:#5a5a6e;
+    cursor:pointer;
+    font-size: 14px;
+    transition:all .3s;
+    top: 220px!important;
+    width: 110px !important;
+}
+#Boton4:hover{
+    background:#78788c;color:#fff
+}
+#Boton1,#Boton3,#Boton2,#Boton4,#Boton5{
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 120px;
+}
+#Boton2{
+    top: 70px;
+}
+#Boton3{
+    top: 140px;
+}
+#Boton5{
+    top: 280px;
+}
+
+.datosEmp{
+    text-align: center;
+    background-color: #d4d4d4;
+    margin: 20px 250px 50px 250px;
+    padding: 15px 0 30px 0;
+    border-radius: 25px;
+}
+
+
+
+.Tabla{
+   color: black;
+   margin: 10px 0;
+   max-height: 93%;
+   max-width: 90%;
+   overflow-x: scroll;
+   background:white;
+   padding: 0 0 10px 5px;
+}
+
+/*Actualizar Formulario ;)*/
+.formActualizar{
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    margin: 0;  
+    border-radius: 0;
+    width: 100%;
+    height: 100%;
+    background: #61616181;
+}
+
+.formActualizar > .formDatos{
+       overflow-y: scroll;
+       height: 90%;
+       padding-bottom: 80px;
+       margin-top: 10px;
+}
+.formActualizar > .formDatosId{
+    width:500px;
+    height:200px;
+    background:#e6e6e6;
+    border-radius:8px;
+    box-shadow:0 0 40px -10px #000;
+    margin: 30%;
+    padding:20px 30px;
+    max-width:calc(100vw - 40px);
+    box-sizing:border-box;
+    font-family:'Montserrat',sans-serif;
+    position:relative;
+    color: #000;
+    padding-bottom: 80px;
+    margin-top: 10px;
+}
+
+#consultarNom{
+    text-decoration: none;
+    color: rgb(101, 101, 240);
+}
+
+#consultarNom:hover{
+    color: blue;
+}
+
+.cerrar{
+    font-size: 25px;
+    font-weight: bolder;
+    cursor: pointer;
+    position: absolute;
+    right: 5%;
+    top: 3%;
+    color: #000;
+    padding: 10px;
+    border: 3px solid #000;
+    border-radius: 50%;
+    transition: .5s all;
+    font-family: Arial;
+}
+.cerrar:hover{
+    color: red;
+}
+
+
+.imprimir{
+    writing-mode: tb-rl;
+    height: 80%;
+    overflow-x: unset;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.imprimir td, .imprimir th{
+    padding: 0;
+    font-size: 10.3px;
+}
+
+#regresarBtn{
+    text-decoration: none;
+    margin: 50px;
+}
+

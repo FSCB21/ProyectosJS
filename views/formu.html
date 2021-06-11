@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="../assets/css/styleform.css">
+    <title>Nomina</title>
+</head>
+
+<body>
+    <h2>NOMINA</h2>
+    <div class="formDatos" id="formularioConten">
+
+        <Form class="" method="get" name="formDatos" id="formDatos">
+
+            <p type="Nombre:"><input type="text" name="Name" id="Name" placeholder="Ingrese Nombre"></p>
+
+            <p type="Documento:">
+                <input type="number" name="Document" id="Document" placeholder="Ingrese Documento">
+            </p>
+
+
+            <p type="Sueldo:">
+                <input type="number" name="salary" id="salary" placeholder="Ingrese sueldo actual">
+            </p>
+
+
+            <p type="Dias Trabajados:">
+                <input type="number" name="Days" id="Days" placeholder="Ingrese dias trabajados">
+            </p>
+            <p type="Horas Extras Diurnas:">
+                <input type="text" name="HED" id="HED" placeholder="Ingrese Horas Extras Diurnas">
+            </p>
+            <p type="Horas Extras Nocturnas:">
+                <input type="text" name="HEN" id="HEN" placeholder="Ingrese Horas Extras Nocturnas">
+            </p>
+            <p type="Horas Extras Dominicales:">
+                <input type="text" name="HEDD" id="HEDD" placeholder="Ingrese Horas Extras Dominicales">
+            </p>
+            <p type="Horas Extras Dominicales Nocturnas:">
+                <input type="text" name="HeDN" id="HeDN" placeholder="Ingrese Horas Extras Dominicales Nocturnas">
+            </p>
+            <p type="Horas Recargo Nocturno:">
+                <input type="text" name="Rec" id="Rec" placeholder="Ingrese Horas Recargo Nocturno">
+            </p>
+            <p type="Nivel De Riesgo:">
+                <select name="Riesgo" id="Riesgo">
+                    <option value="" selected>Seleccione Nivel De Riesgo</option>
+                    <option value="1">Nivel 1</option>
+                    <option value="2">Nivel 2</option>
+                    <option value="3">Nivel 3</option>
+                    <option value="4">Nivel 4</option>
+                    <option value="5">Nivel 5</option>
+                </select>
+            </p>
+
+            <button type="button" onclick="ObtenerDatos()">Agregar Empleado</button>
+            <a href="nomina.html" id="consultarNom">Consultar Nomina</a>
+        </Form>
+    </div>
+
+    <footer class="footer">NOMINA 2021&copy;</footer>
+
+    <script src="../assets/js/nomina/regEmp.js" type="text/javascript"></script>
+    <script src="../assets/js/nomina/operaciones.js" type="text/javascript"></script>
+    <script src="../assets/js/nomina/crudnom.js" type="text/javascript"></script>
+
+</body>
+
+</html>
